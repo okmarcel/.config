@@ -4,21 +4,15 @@ vim.o.wrap = false
 vim.o.tabstop = 4
 vim.o.softtabstop = 4
 vim.o.shiftwidth = 4
-vim.o.wrap = false
+vim.o.termguicolors = true
 
 vim.g.mapleader = " "
-
 vim.keymap.set('n', '<leader>o', ':update<CR> :source<CR>') 
 
 vim.pack.add({
-  "https://github.com/vague-theme/vague.nvim",
+	{ src = "https://github.com/vague2k/vague.nvim" },
 })
 
-require("vague").setup({
-  -- optional configuration here
-})
+require("vague").setup({})
 
 vim.cmd("colorscheme vague")
-
-vim.o.termguicolors = true
-
