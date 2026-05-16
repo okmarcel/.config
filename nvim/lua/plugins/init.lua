@@ -29,6 +29,7 @@ return {
 		},
 	},
 
+--[[
 	{
 		-- vague colorscheme
 		"vague2k/vague.nvim",
@@ -36,6 +37,19 @@ return {
 		config = function()
 		  require("vague").setup({})
 		  vim.cmd.colorscheme("vague")
+		end,
+	},
+]]
+	{
+		-- kanagawa colorscheme
+		"rebelot/kanagawa.nvim",
+		priority = 1000,
+		config = function()
+		  require("kanagawa").setup({})
+		  vim.cmd.colorscheme("kanagawa-dragon")
+		  -- other theme options
+		  -- vim.cmd.colorscheme("kanagawa-wave")
+		  -- vim.cmd.colorscheme("kanagawa-lotus")
 		end,
 	},
 
