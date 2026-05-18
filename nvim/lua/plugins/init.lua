@@ -63,4 +63,13 @@ return {
 		  require("nvim-tree").setup()
 		end,
 	},
+
+	{
+		-- strudel
+		"gruvw/strudel.nvim",
+		build = "npm ci",
+		config = function()
+		  require("strudel").setup()
+		end,
+	},
 }
