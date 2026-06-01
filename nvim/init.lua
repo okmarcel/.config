@@ -25,6 +25,10 @@ vim.keymap.set('n', '<leader>q', ':q<CR>')
 -- vim.keymap.set('n', '<leader>e', ':Ex<CR>')
 vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>')
 
+vim.keymap.set("n", "<leader>dw", vim.diagnostic.open_float, { desc = "Show warning" })
+vim.keymap.set("n", "<leader>dn", vim.diagnostic.goto_next, { desc = "Next warning" })
+vim.keymap.set("n", "<leader>dp", vim.diagnostic.goto_prev, { desc = "Previous warning" })
+
 -- Strudel keymaps
 local strudel = require("strudel")
 
