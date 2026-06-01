@@ -1,0 +1,6 @@
+font-size = 20
+theme = Kanagawa Dragon
+
+clipboard-trim-trailing-spaces = true
+
+keybind = ctrl+s=new_split:right
