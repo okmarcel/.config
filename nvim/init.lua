@@ -29,6 +29,16 @@ vim.keymap.set("n", "<leader>dw", vim.diagnostic.open_float, { desc = "Show warn
 vim.keymap.set("n", "<leader>dn", vim.diagnostic.goto_next, { desc = "Next warning" })
 vim.keymap.set("n", "<leader>dp", vim.diagnostic.goto_prev, { desc = "Previous warning" })
 
+
+-- git keymaps
+vim.keymap.set("n", "<leader>gp", "<cmd>Gitsigns preview_hunk<CR>", { desc = "Preview git hunk" })
+vim.keymap.set("n", "<leader>gb", "<cmd>Gitsigns blame_line<CR>", { desc = "Git blame line" })
+vim.keymap.set("n", "<leader>gd", "<cmd>Gitsigns diffthis<CR>", { desc = "Git diff current file" })
+
+vim.keymap.set("n", "<leader>gv", "<cmd>DiffviewOpen<CR>", { desc = "Open git diff view" })
+vim.keymap.set("n", "<leader>gq", "<cmd>DiffviewClose<CR>", { desc = "Close git diff view" })
+
+
 -- Strudel keymaps
 local strudel = require("strudel")
 

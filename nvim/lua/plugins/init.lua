@@ -65,6 +65,18 @@ return {
 	},
 
 	{
+		-- git signs
+		"lewis6991/gitsigns.nvim",
+		opts = {},
+	},
+
+	{
+		-- git diff view
+		"sindrets/diffview.nvim",
+		dependencies = { "nvim-lua/plenary.nvim" },
+	},
+
+	{
 		-- strudel
 		"gruvw/strudel.nvim",
 		build = "npm ci",
