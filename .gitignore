@@ -2,4 +2,7 @@ gh
 fish
 neofetch
 htop
+btop
 nvim/lazy-lock.json
+uv
+spotatui
